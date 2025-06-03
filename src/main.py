@@ -9,7 +9,7 @@ character_class_ls = [
 
 def Character_Class():
    class_random_val = random.randint(0,len(character_class_ls)-1)
-   print(character_class_ls[class_random_val])
+   print(f'Class: {character_class_ls[class_random_val]}')
 
 #The List of Races in DnD
 character_race_ls = [
@@ -22,7 +22,18 @@ character_race_ls = [
 
 def Character_Race():
    race_random_val = random.randint(0,len(character_race_ls)-1)
-   print(character_race_ls[race_random_val])
+   print(f'Race: {character_race_ls[race_random_val]}')
+
+character_alignment_ls = [
+    "Chaotic Evil", "Chaotic Good", "Chaotic Neutral",
+    "Lawful Evil", "Lawful Good", "Lawful Neutral",
+    "True Neutral", "Neutral Evil", "Neutral Good"
+]
+
+def Character_Alignment():
+    alignment_random_val = random.randint(0,len(character_alignment_ls)-1)
+    print(f'Alignment: {character_alignment_ls[alignment_random_val]}')
+
 
 #Point buy Radomizer: A system that starts with a Value of 8 in all stats and uses a random value to assign point from a pool of 27 point. Depending on the incread it will subtract from the pool of point at varying cost.
 #Cost: 8(-0), 9(-1), 10(-2), 11(-3), 12(-4),13(-5),14(-7),15(-9)
@@ -83,6 +94,7 @@ def main():
         print(f"Here is the character you ordered:")
         Character_Race()
         Character_Class()
+        Character_Alignment()
         Point_Buy_Randomizer()
     else:
         print("Try again......")
