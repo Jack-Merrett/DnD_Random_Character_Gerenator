@@ -1,0 +1,29 @@
+# Compiled files & cache
+__pychache__/
+*.pyc
+
+# Vertual environment
+venv/
+
+# Logs & temporary files
+*.log 
+tmp/
+*.tmp 
+
+# Environment Variables (Security-related)
+.env
+
+# Dependancies (if using pii)
+*.egg-info/
+dist/ 
+build/
+
+# IDE/Editor files (VS Code, JetBrains, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store   # macOS
+Thumbs.db   # Windows
