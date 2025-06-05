@@ -27,3 +27,6 @@ build/
 # OS-specific files
 .DS_Store   # macOS
 Thumbs.db   # Windows
+
+# Idea page
+idea_for_project.md
