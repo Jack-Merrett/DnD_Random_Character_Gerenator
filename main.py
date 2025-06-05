@@ -8,6 +8,7 @@ def main():
         print(f"Here is the character you ordered:")
         functions.Character_Race()
         functions.Character_Class()
+        functions.Character_Background()
         functions.Character_Alignment()
         functions.Point_Buy_Randomizer()
     else:

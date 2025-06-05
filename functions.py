@@ -36,6 +36,17 @@ def Character_Alignment():
     alignment_random_val = random.randint(0,len(character_alignment_ls)-1)
     print(f'Alignment: {character_alignment_ls[alignment_random_val]}')
 
+backgrounds_ls = [
+    "Acolyte", "Charlatan", "Criminal",
+    "Entertainer", "Folk Hero","Guild Artisan",
+    "Hermit","Noble","Outlander",
+    "Sage","Sailor","Soldier", "Urchin"
+]
+
+def Character_Background():
+    background_random_val = random.randint(0,len(backgrounds_ls)-1)
+    print(f'Background: {backgrounds_ls[background_random_val]}')
+
 
 #Point buy Radomizer: A system that starts with a Value of 8 in all stats and uses a random value to assign point from a pool of 27 point. Depending on the incread it will subtract from the pool of point at varying cost.
 #Cost: 8(-0), 9(-1), 10(-2), 11(-3), 12(-4),13(-5),14(-7),15(-9)
