@@ -1,3 +1,5 @@
+# Import all the essential libraries.
+
 import random
 
 #The list of Classes in DnD
@@ -39,7 +41,7 @@ def Character_Alignment():
 #Cost: 8(-0), 9(-1), 10(-2), 11(-3), 12(-4),13(-5),14(-7),15(-9)
 
 def Point_Buy_Randomizer():
-    pool = 27
+    pool = 27 # This is the classic starting ammount for the "point-Buy" system.
 
     ability_scores = {
         "STR": 8,
