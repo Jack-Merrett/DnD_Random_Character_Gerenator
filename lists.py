@@ -31,3 +31,10 @@ backgrounds_ls = [
     "Sage","Sailor","Soldier", "Urchin"
 ]
 
+#generally a good Suggestion for the Randome Generator to look into (NOT IMPLAMENTED YET)
+ability_priority = {
+    "Barbarian": ["STR", "CON"],
+    "Rogue": ["DEX", "INT"],
+    "Cleric": ["WIS", "CON"],
+    "Wizard": ["INT", "DEX"]
+}
