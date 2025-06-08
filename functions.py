@@ -74,3 +74,17 @@ def Point_Buy_Randomizer():
    
     print(f"\nFinal stats: {ability_scores}")
     print(f"Remaining point(s): {pool}")
+
+def generate_character():
+    inputval = int(input(f"Are you ready for your character? 1= yes, 0 = No: "))
+
+    if inputval == 1:
+        print(f"\nHere is your random character:\n")
+        Character_Race()
+        Character_Class()
+        Character_Background()
+        Character_Alignment()
+        Point_Buy_Randomizer()
+        print(f'\nNotes for the user:\nThis is a good starting point, feel free to build from here or go your own direction... that is half the fun!')
+    else:
+        print("Try again......")

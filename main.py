@@ -1,21 +1,12 @@
-import random
-import functions
-import lists
+from flask import Flask, render_template
+from functions import generate_character
 
-def main():
-    inputval = int(input(f"Are you ready for your character? 1= yes, 0 = No: "))
+app = Flask(__name__)
 
-    if inputval == 1:
-        print(f"\nHere is your random character:\n")
-        functions.Character_Race()
-        functions.Character_Class()
-        functions.Character_Background()
-        functions.Character_Alignment()
-        functions.Point_Buy_Randomizer()
-        print(f'\nNotes for the user:\nThis is a good starting point, feel free to build from here or go your own direction... that is half the fun!')
-    else:
-        print("Try again......")
+@app.route("/")
+def home():
+    chacter = generate_character()
+    return render_template("index.html", character=character)
 
-    
-
-main()
+if __name__ =="__main__":
+    app.run(host='0.0.0.0', port=81)

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D&D Character Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🧙 D&D 5e Character Generator</h1>
+    <div class="character-box">
+        <p><strong>Race:</strong> {{ character.race }}</p>
+        <p><strong>Class:</strong> {{ character.class }}</p>
+        <p><strong>Background:</strong> {{ character.background }}</p>
+        <p><strong>Alignment:</strong> {{ character.alignment }}</p>
+        <h2>Stats:</h2>
+        <ul>
+            {% for stat, value in character.stats.items() %}
+            <li>{{ stat }}: {{ value }}</li>
+            {% endfor %}
+        </ul>
+        <p><strong>Remaining Point(s):</strong> {{ character.remaining_points }}</p>
+    </div>
+</body>
+</html>
