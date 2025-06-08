@@ -11,13 +11,18 @@
         <p><strong>Class:</strong> {{ character.class }}</p>
         <p><strong>Background:</strong> {{ character.background }}</p>
         <p><strong>Alignment:</strong> {{ character.alignment }}</p>
+        
         <h2>Stats:</h2>
         <ul>
             {% for stat, value in character.stats.items() %}
             <li>{{ stat }}: {{ value }}</li>
             {% endfor %}
         </ul>
+        
         <p><strong>Remaining Point(s):</strong> {{ character.remaining_points }}</p>
+        
+        <!-- 👍 New line added below -->
+        <p><em>{{ character.message }}</em></p>
     </div>
 </body>
 </html>
