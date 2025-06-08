@@ -14,6 +14,7 @@ def Character_Class():
    class_random_val = random.randint(0,len(character_class_ls)-1)
    print(f'Class: {character_class_ls[class_random_val]}')
 
+
 #The List of Races in DnD
 character_race_ls = [
     "Aarakocra", "Deep Gnome", "Dragonborn",
@@ -27,6 +28,7 @@ def Character_Race():
    race_random_val = random.randint(0,len(character_race_ls)-1)
    print(f'Race: {character_race_ls[race_random_val]}')
 
+
 character_alignment_ls = [
     "Chaotic Evil", "Chaotic Good", "Chaotic Neutral",
     "Lawful Evil", "Lawful Good", "Lawful Neutral",
@@ -36,6 +38,7 @@ character_alignment_ls = [
 def Character_Alignment():
     alignment_random_val = random.randint(0,len(character_alignment_ls)-1)
     print(f'Alignment: {character_alignment_ls[alignment_random_val]}')
+
 
 backgrounds_ls = [
     "Acolyte", "Charlatan", "Criminal",
